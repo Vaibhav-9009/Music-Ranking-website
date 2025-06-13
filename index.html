@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Charts - Your Ultimate Music Streaming Rankings Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Stream Charts</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#rankings2024" class="nav-link">2024 Rankings</a></li>
+                <li><a href="#trending2025" class="nav-link">2025 Trending</a></li>
+                <li><a href="#platforms" class="nav-link">Platform Comparison</a></li>
+                <li><a href="#artists" class="nav-link">Artist Rankings</a></li>
+                <li><a href="#tiktok" class="nav-link">TikTok Viral</a></li>
+                <li><a href="#stats" class="nav-link">Industry Stats</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Stream Charts</h1>
+            <p class="hero-subtitle">Your Ultimate Music Streaming Rankings Hub</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="20000000000">0</span>
+                    <span class="stat-label">Total Streams</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="6">0</span>
+                    <span class="stat-label">Active Platforms</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="1800">0</span>
+                    <span class="stat-label">Trending Songs</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-gradient"></div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search for songs, artists, or albums..." class="search-input">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="2024">2024</button>
+                    <button class="filter-btn" data-filter="2025">2025</button>
+                    <button class="filter-btn" data-filter="artists">Artists</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2024 Rankings Section -->
+    <section id="rankings2024" class="rankings-section">
+        <div class="container">
+            <h2 class="section-title">Top Songs of 2024</h2>
+            <div class="rankings-grid" id="rankings2024Grid">
+                <!-- Rankings will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 2025 Trending Section -->
+    <section id="trending2025" class="trending-section">
+        <div class="container">
+            <h2 class="section-title">2025 Trending Now</h2>
+            <div class="trending-grid" id="trending2025Grid">
+                <!-- Trending songs will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Comparison Section -->
+    <section id="platforms" class="platforms-section">
+        <div class="container">
+            <h2 class="section-title">Platform Market Share</h2>
+            <div class="platforms-content">
+                <div class="chart-container">
+                    <canvas id="platformChart"></canvas>
+                </div>
+                <div class="platform-details" id="platformDetails">
+                    <!-- Platform details will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artist Rankings Section -->
+    <section id="artists" class="artists-section">
+        <div class="container">
+            <h2 class="section-title">Top Artists by Monthly Listeners</h2>
+            <div class="artists-grid" id="artistsGrid">
+                <!-- Artists will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- TikTok Viral Section -->
+    <section id="tiktok" class="tiktok-section">
+        <div class="container">
+            <h2 class="section-title">TikTok Viral Hits 2025</h2>
+            <div class="tiktok-grid" id="tiktokGrid">
+                <!-- TikTok viral songs will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Statistics Section -->
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <h2 class="section-title">Industry Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Market Size 2025</h3>
+                    <div class="stat-value">$<span class="counter" data-target="108.73">0</span>B</div>
+                    <p>Current streaming market value</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Projected 2032</h3>
+                    <div class="stat-value">$<span class="counter" data-target="193.84">0</span>B</div>
+                    <p>Expected market growth</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Growth Rate</h3>
+                    <div class="stat-value"><span class="counter" data-target="8.6">0</span>%</div>
+                    <p>Annual growth (CAGR)</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Global Subscriptions</h3>
+                    <div class="stat-value"><span class="counter" data-target="1.8">0</span>B</div>
+                    <p>Total streaming subscriptions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Stream Charts</h3>
+                    <p>Your ultimate destination for music streaming rankings and statistics.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#rankings2024">2024 Rankings</a></li>
+                        <li><a href="#trending2025">2025 Trending</a></li>
+                        <li><a href="#platforms">Platforms</a></li>
+                        <li><a href="#artists">Artists</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Data Sources</h4>
+                    <ul>
+                        <li>Spotify API</li>
+                        <li>Apple Music</li>
+                        <li>YouTube Music</li>
+                        <li>TikTok Trends</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Stream Charts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
