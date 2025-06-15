@@ -1,3 +1,16 @@
-# Music-Ranking-website
-A web app for ranking and discovering music, built with HTML, CSS, JavaScript, and Python. Create personal song and album rankings, write reviews, and explore trending tracks. Features interactive charts, real-time updates, and a responsive design. Perfect for music lovers!
+🎵 Music Ranking Website
+A dynamic web application for ranking and discovering music!
+Built with HTML, CSS, JavaScript, and Python.
+
+Features
+🌟 Rank your favorite songs and albums
+
+🔍 Search and browse trending music
+
+📝 User-friendly interface for submitting reviews
+
+📊 Real-time updates and interactive charts
+
+Tech Stack
+Frontend: HTML, CSS, JavaScript
 https://vaibhav-9009.github.io/Music-Ranking-website/
